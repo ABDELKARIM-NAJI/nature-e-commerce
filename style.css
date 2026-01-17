@@ -1,0 +1,142 @@
+/* styles.css */
+
+/* Général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #db0b0b;
+}
+
+/* Header */
+header {
+    background-color: #2e7d32;
+    color: #fff;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Section Home */
+#home {
+    background-image: url('banniere.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+}
+
+#home h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#home .btn-cta {
+    background-color: #f1c40f;
+    padding: 10px 20px;
+    color: #2e7d32;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Section About */
+#about {
+    padding: 40px 20px;
+    background-color: #e0f7fa;
+    text-align: center;
+}
+
+.about-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.about-images img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Section Produit */
+#produit {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#produit h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.produit-card {
+    display: inline-block;
+    width: 250px;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.produit-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.produit-card h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.produit-card button {
+    background-color: #2e7d32;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.produit-card button:hover {
+    background-color: #1b5e20;
+}
+
+/* Section Contact */
+#contact {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #2e7d32;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
