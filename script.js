@@ -8,6 +8,12 @@ function acheterProduit(nomProduit) {
     window.open(whatsappUrl, '_blank');
 }
 
+// Fonction pour basculer le menu hamburger
+function toggleMenu() {
+    const navMenu = document.getElementById('nav-menu');
+    navMenu.classList.toggle('active');
+}
+
 // Ajouter des événements aux boutons d'achat
 document.addEventListener('DOMContentLoaded', () => {
     const boutonsAcheter = document.querySelectorAll('.acheter-btn');
@@ -17,4 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
             acheterProduit(produitNom);
         });
     });
+
+    // Ajouter événement au bouton hamburger
+    const hamburger = document.getElementById('hamburger');
+    hamburger.addEventListener('click', toggleMenu);
 });
